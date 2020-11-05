@@ -1,0 +1,15 @@
+[package]
+name = "testlib"
+version = "0.1.0"
+authors = ["Fred Lahde <fred@kloud.software>"]
+edition = "2018"
+
+[lib]
+name = "myrustlib"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+version = "0.5.1"
+git = "https://github.com/fredlahde/rust-cpython"
+rev = "518fe9088ae5674522dba6dcac62a9eb5cbe3052"
+features = ["extension-module"]
